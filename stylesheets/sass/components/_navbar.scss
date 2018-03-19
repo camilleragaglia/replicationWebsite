@@ -1,0 +1,57 @@
+//NAV BAR SASS PARTIALS
+
+//PLACEHOLDERS
+
+%navBarUL{
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li{
+      font-size: .85em;
+      color: #595959;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin: 0 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+#navBar{
+  height: 66px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E5E5E5;
+
+  #navBarLeft{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+
+    #navBarLogo{
+      height: 100%;
+      width: auto;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    @extend %navBarUL;
+
+    li:first-child{
+      margin: 0 15px 0 30px;
+    }
+  }
+
+  #navBarRight{
+    height: 100%;
+    width: auto;
+    display: flex;
+    @extend %navBarUL;
+  }
+}
