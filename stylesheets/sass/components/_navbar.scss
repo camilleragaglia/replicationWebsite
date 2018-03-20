@@ -9,12 +9,17 @@
     align-items: center;
 
     li{
-      font-size: .85em;
+      font-size: .88em;
       color: #595959;
       letter-spacing: .1em;
       text-transform: uppercase;
-      margin: 0 20px;
+      margin: 0 15px;
+      padding-bottom: 1px;
       cursor: pointer;
+
+      &:hover{
+        color: #1BA3DE;
+      }
     }
   }
 }
@@ -53,5 +58,23 @@
     width: auto;
     display: flex;
     @extend %navBarUL;
+
+    li:first-child{
+      color: #1BA3DE;
+    }
+
+    li:nth-child(2) {
+      margin-right: 0px;
+    }
+
+    li:nth-child(3) {
+      &:hover{
+        fill: #1BA3DE;
+      }
+    }
+
+    li:last-child{
+      margin: 0px 0px 0px 5px;
+    }
   }
 }
