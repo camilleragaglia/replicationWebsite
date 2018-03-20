@@ -80,7 +80,7 @@ hr{
     }
   }
 
-    li:first-child{
+    li{
 
       &:hover{
         .navBarDD{
@@ -153,10 +153,4 @@ hr{
       width: 100%;
     }
   }
-}
-
-#hero{
-  height: 550px;
-  width: 100vw;
-  background-color: #CCC;
 }
