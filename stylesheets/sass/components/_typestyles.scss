@@ -1,0 +1,19 @@
+//TYPE STYLESHEETS
+
+//ELEMENTS
+
+h1{
+  font-size: 2.9em;
+  color: rgba(0,0,0,.6);
+  line-height: 1.25;
+  margin: 10px 0;
+}
+
+//CUSTOM TYPE STYLES
+
+.smallCapsHeader{
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: rgba(0,0,0,.6);
+}
